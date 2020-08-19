@@ -170,7 +170,7 @@ class Stream (Thread):
                         elif freq_val > self.avg[band]:
                             self.state[band] = 'High'
                     else:
-                        self.noise[band] = False
+                        self.noise[band] = True
 
                     # calculate exponentially weighted average for a given band, store in avg
                     if not self.noise[band]:
